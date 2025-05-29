@@ -13,9 +13,7 @@ type Assignment = {
    dueDate: string;
    
   };
-hello
-
-const columns = [
+  const columns = [
   {
     header: "Course Title",
     accessor: "name",
