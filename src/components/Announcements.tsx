@@ -14,7 +14,7 @@ const Announcements = () => {
                     </span>
             </div>
             <p className="text-sm text-gray-400 mt-1">
-              A quick heads-up about our upcoming event – mark your calendars!  
+              A quick heads-up about our upcoming event mark your calendars!  
             </p>
         </div>
         <div className="bg-lamaPurpleLight rounded-md p-4">
