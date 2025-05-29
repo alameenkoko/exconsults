@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Excellence Consults",
-  description: "Next.js School Management System",
+  description: "Career Development Program",
 };
 <SpeedInsights />
 export default function RootLayout({
