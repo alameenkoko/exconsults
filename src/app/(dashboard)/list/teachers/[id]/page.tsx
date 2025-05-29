@@ -94,11 +94,11 @@ const SingleTeacherPage = () => {
         <div className="bg-white p-4 rounded-md flex flex-col gap-4">
           <h1 className="text-xl font-semibold">Shortcuts</h1>
         <div className="mt-4 flex gap-4 flex-wrap text-xs text-gray-500">
-          <Link className="p-3 rounded-md bg-lamaBlue" href="/">Lecturer&apos;s Department</Link>
-          <Link className="p-3 rounded-md bg-lamaPurpleLight" href="/">Lecturer&apos;s Students</Link>
-          <Link className="p-3 rounded-md bg-lamaRed" href="/">Lecturer&apos;s Lessons</Link>
-          <Link className="p-3 rounded-md bg-pink-50" href="/">Lecturer&apos;s Exam</Link>
-          <Link className="p-3 rounded-md bg-LamaSkyLight" href="/">Lecturer&apos;s Assignments</Link>
+          <Link className="p-3 rounded-md bg-lamaBlue" href="/">Department</Link>
+          <Link className="p-3 rounded-md bg-lamaPurpleLight" href="/">Students</Link>
+          <Link className="p-3 rounded-md bg-lamaRed" href="/">Lessons</Link>
+          <Link className="p-3 rounded-md bg-pink-50" href="/">Exam</Link>
+          <Link className="p-3 rounded-md bg-LamaSkyLight" href="/">Assignments</Link>
 
           </div>
         </div>
