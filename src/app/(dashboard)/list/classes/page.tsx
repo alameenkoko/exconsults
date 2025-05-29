@@ -4,7 +4,7 @@ import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
 import { classesData, role } from "@/lib/data";
 import Image from "next/image";
-import Link from "next/link";
+
 
 type Class = {
   id: number;
@@ -34,9 +34,7 @@ const columns = [
     accessor: "supervisor",
     className: "hidden md:table-cell",
       },
-  
-  
-    {
+  {
     header: "Action",
     accessor: "action",
   },
@@ -46,8 +44,7 @@ const ClassListPage = () => {
   const renderRow = (item: Class) => (
     <tr
       key={item.id}
-      className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight"
-    >
+      className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight">
       <td className="flex items-center gap-4 p-4">{item.name}</td>
       <td className="hidden md:table-cell">{item.capacity}</td>
       <td className="hidden md:table-cell">{item.grade}</td>
