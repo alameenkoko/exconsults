@@ -8,13 +8,13 @@ const Announcements = () => {
     <div className="flex flex-col gap-4 mt-4">
         <div className="bg-lamaBlue rounded-md p-4">
             <div className="flex items-center justify-between">
-                <h2 className="font-medium">Event Reminder: Don't Miss Out!</h2>
+                <h2 className="font-medium">Event Reminder: Don&apos;t Miss Out!</h2>
                 <span className="text-xs text-gray-400">
                     2025-06-06
                     </span>
             </div>
             <p className="text-sm text-gray-400 mt-1">
-              A quick heads-up about our upcoming event mark your calendars!  
+              A quick heads-up about our upcoming event mark your calendars  
             </p>
         </div>
         <div className="bg-lamaPurpleLight rounded-md p-4">
@@ -37,7 +37,7 @@ const Announcements = () => {
                     
             </div>
             <p className="text-sm text-gray-400 mt-1">
-              We're performing essential system maintenance on 2025-07-06 to improve performance.
+              We&apos;re performing essential system maintenance on 2025-07-06 to improve performance.
             </p>
         </div>
 
