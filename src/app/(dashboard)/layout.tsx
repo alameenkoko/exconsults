@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Menu from "@/components/Menu";
 import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +14,7 @@ export const metadata: Metadata = {
   title: "Excellence Consults",
   description: "Career Development Program",
 };
+<SpeedInsights />
 
 export default function DashboardLayout({
   children,
