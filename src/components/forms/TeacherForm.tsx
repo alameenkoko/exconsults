@@ -3,6 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import InputField from '../InputField';
 
 const schema = z.object({
   username: z
@@ -22,34 +23,47 @@ const schema = z.object({
   img:z.instanceof(File,{message:"Image is required!"}),
   
 });
+
+type Inputs = z.infer<typeof schema>;
+
 const TeacherForm = ({
     type,
     data
 }: {
-    type:"create" | "update";data?:any;
+    type:"create" | "update";
+    data?:any;
 }) => {
     const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<Inputs>({
     resolver: zodResolver(schema),
   });
   const onSubmit = handleSubmit((data) => {
     console.log(data);
   });
     return ( 
-    <form className='flex flex-col gap-8' onSubmit={onSubmit}>
+    <form className="flex flex-col gap-8" onSubmit={onSubmit}>
         <h1 className='text-xl font-semibold'>Create a new lecturer</h1>
-        <span className='text-xs text-gray-400 font-medium'>Authentication Information</span>
-        <input type="text" {...register("username")} placeholder='Username' className='ring-[1.5px] ring-gray-300 p-2 rounded-md text-sm' />
-        {errors.username?.message && <p>{errors.username?.message.toString()}</p>}
-        
+        <span className='text-xs text-gray-400 font-medium'>
+        Authentication Information
+        </span>
+       <InputField 
+       label="Username" 
+       name="username" 
+       defaultValue={data?.username} 
+       register={register} 
+       error={errors.username}
+       />
        <span className='text-xs text-gray-400 font-medium'>Personal Information</span>
-     <button className='bg-blue-400 text-white p-2 rounded-md'>{type === "create" ? "Create" : "Update"  }</button>
+     <button 
+     className='bg-blue-400 text-white p-2 rounded-md'>
+     {type === "create" ? "Create" : "Update"  }
+     </button>
      </form>
-    )
-}
+    );
+};
 
 export default TeacherForm;
 
