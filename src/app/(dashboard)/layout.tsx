@@ -21,7 +21,7 @@ export default function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="h-screen flex">
+  return <div className="h- flex">
     {/* LEFT */}
     <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
         <Link 
